@@ -10,7 +10,7 @@ from selenium.webdriver.common.keys import Keys
 def download_checker():
     for i in os.listdir("C:\\Users\\user\\Downloads\\Songs")[:3]:
         if ".crdownload" in i:
-            time.sleep(1)
+            time.sleep(0.1)
             download_checker()
 def scrape(path):
     prefs = {"download.default_directory":path}
