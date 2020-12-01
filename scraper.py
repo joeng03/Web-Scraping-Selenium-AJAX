@@ -22,7 +22,7 @@ def scrape(path):
     driver = webdriver.Chrome(executable_path=r'C:\STUFF\chromedriver_win32 (1)\chromedriver.exe',options=chrome_options)
     wait = WebDriverWait(driver, 10)
     driver.get('https://www.mp3juices.cc/')
-    songs=["bohemian rhapsody","castle on the hill","everything i wanted"]
+    songs=["castle on the hill", "shape of you", "perfect"]
     for song in songs:
         search_box = driver.find_element_by_name('query')
         search_box.clear()
